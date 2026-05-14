@@ -37,6 +37,7 @@ Example:
 
 class Car:
     def __init__(self, brand):
+         
          self.brand = brand
 
 
@@ -52,6 +53,7 @@ Example:
 
 class Bank:
     def __init__(self):
+        
         self.__balance = 1000
 
 # Inheritance
@@ -62,8 +64,10 @@ Example:
 
 class Animal:
     def sound(self):
+        
         print("Animal sound")
 class Dog(Animal):
+    
     pass
 
 
@@ -83,16 +87,19 @@ Example:
 
 class Dog:
     def sound(self):
+        
         print("Bark")
 
 
 class Cat:
     def sound(self):
+        
         print("Meow")
 
 animals = [Dog(), Cat()]
 
 for animal in animals:
+    
     animal.sound()
 
 Output:
@@ -109,12 +116,15 @@ Example:
 from abc import ABC, abstractmethod
 
 class Vehicle(ABC):
+    
     @abstractmethod
     def start(self):
+        
         pass
 
 class Car(Vehicle):
     def start(self):
+        
         print("Car Started")
 
 c1 = Car()
